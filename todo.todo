@@ -1,0 +1,27 @@
+-- Start APACHE and MYSQL
+-- CREATE A DATABASE
+    -- Create tables
+-- DESIGN FRONTEND @done
+    -- Set up your design @done
+-- SET UP CONNECTION
+    -- Create connection using PHP PDO
+-- AJAX AND PHP Manipulation
+    $.ajax({
+        type: "POST",
+        datatype: 'JSON'
+        enctype: 'multipart/form-data',
+        url: "/upload.php",
+        data: [],
+        success: function (data) {
+            // success
+        },
+        error: function (e) {
+                // error
+        }
+    });
+
+        $query = 'SELECT * FROM users WHEREE id = ?'
+        $result = $pdo->prepare($query);
+        $result->execute(['parameter']);
+
+        $users = $result->fetchAll(); // fetch
