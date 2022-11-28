@@ -31,8 +31,8 @@
           <form class="" action="" method="post">
             <div class="row">
               <div class="col">
-                <div class="alert alert-warning" role="alert">
-                  Error handling here!
+                <div class="alert alert-warning" id="error_handling" role="alert">
+                  Error here
                 </div>
               </div>
             </div>

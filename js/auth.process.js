@@ -1,4 +1,6 @@
 $(document).ready(function () {
+  $("#error_handling").hide();
+
   $("#btnSave").click(function (e) {
     let username = $("#username").val();
     let password = $("#password").val();
@@ -20,8 +22,18 @@ $(document).ready(function () {
         last_name: last_name,
         isClicked: true,
       },
-      success: function (data) {
-        console.log(data);
+      success: function (response) {
+        let data = JSON.parse(response);
+
+        if (data.responseCode == 404) {
+          $("#error_handling").show();
+          $("#error_handling").html("Empty! Input all the fields");
+        } else if (data.responseCode == 300) {
+          $("#error_handling").show();
+          $("#error_handling").html("Password doesn't match!");
+        } else {
+          window.location.href = "login.html";
+        }
       },
       error: function (e) {
         console.log(e);
