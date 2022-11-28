@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-  <title>Create Account</title>
+  <title>Login</title>
 </head>
 
 <body>
@@ -16,16 +16,16 @@
     <div class="row mb-3 justify-content-center align-items-center">
       <div class="col-6">
         <h2 class="text-center text-primary">
-          Asynchronous Javascript and XML (AJAX) Demo
+          Login
         </h2>
       </div>
     </div>
 
-    <div class="col-6">
+    <div class="col-4">
       <div class="card">
         <div class="card-header">
-          <h4 class="mb-0">Registration</h4>
-          <p class="mb-0">Register and start doing things that do nothing.</p>
+          <h4 class="mb-0">Login</h4>
+          <p class="mb-0">Login and start doing things that do nothing.</p>
         </div>
         <div class="card-body">
           <form class="" action="" method="post">
@@ -37,31 +37,17 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-4">
+              <div class="col">
                 <input class="form-control mb-3" id="username" type="text" placeholder="Username" />
-              </div>
-              <div class="col">
-                <input class="form-control mb-3" id="email" type="email" placeholder="Email" />
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <input class="form-control mb-3" id="first_name" type="text" id="first_name" placeholder="First name" />
-              </div>
-              <div class="col">
-                <input class="form-control mb-3" id="last_name" type="text" placeholder="Last name" />
               </div>
             </div>
             <div class="row">
               <div class="col">
                 <input class="form-control mb-3" id="password" type="password" placeholder="Password" />
               </div>
-              <div class="col">
-                <input class="form-control mb-3" id="confirm_password" type="password" placeholder="Confirm Password" />
-              </div>
             </div>
-            <button type="button" id="btnSave" class="btn btn-primary">
-              Save
+            <button type="button" id="btnLogin" class="btn btn-primary">
+              Login
             </button>
           </form>
         </div>
